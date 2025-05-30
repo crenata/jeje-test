@@ -24,3 +24,5 @@ Route::prefix(ApiEnum::PREFIX_CUSTOMER)
             Route::prefix("order")->group(__DIR__ . "/customer/order.php");
         });
     });
+
+Route::prefix("vehicles")->group(__DIR__ . "/vehicles.php");

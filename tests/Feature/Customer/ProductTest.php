@@ -7,7 +7,7 @@ use Tests\Feature\DataStore;
 use Tests\TestCase;
 
 class ProductTest extends TestCase {
-    public function test_get_product_without_token_should_error() {
+    public function test_cannot_get_product_without_token() {
         $response = $this->get(DataStore::$basePathCustomer . "/product/get");
         $response->assertUnauthorized();
     }
